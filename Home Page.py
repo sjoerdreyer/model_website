@@ -14,7 +14,7 @@ st.set_page_config(page_title="Sjoerd as a Model",
 st.sidebar.success("Select from the menu above.")
 
 st.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi! Im Sjoerd &#x1F44B</h2>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: #2A79CC;'>A model from the Netherlands &#x1F1F3&#x1F1F1 born and raised in Peru &#x1F1F5&#x1F1EA</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #2A79CC;'>From the Netherlands &#x1F1F3&#x1F1F1 born and raised in Peru &#x1F1F5&#x1F1EA</h2>", unsafe_allow_html=True)
 
 wallaroo_beach = Image.open('raw_data/wallaroo3.jpeg')
 st.image(wallaroo_beach)
