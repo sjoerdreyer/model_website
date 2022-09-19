@@ -7,7 +7,7 @@ from PIL import Image
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
-st.set_page_config(page_title="Sjoerd as a Model",
+st.set_page_config(page_title="Sjoerd de Wit",
                    page_icon = ":tada:",
                    layout='wide')
 
@@ -18,12 +18,15 @@ st.markdown("<h3 style='text-align: center; color: #2A79CC;'>From the Netherland
 
 wallaroo_beach = Image.open('raw_data/wallaroo3.jpeg')
 st.image(wallaroo_beach)
-
-st.markdown("<h4 style='text-align: center; color: #82CAF8;'>I like to use my image to create value for brands</h4>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: #82CAF8;'>Am I a fit for YOUR brand?</h4>", unsafe_allow_html=True)
 st.write('------------')
 
-st.markdown("<h6 style='text-align: center; color: #82CAF8;'>Contact me at:</h6>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>I like to use my image to create value for brands</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Use the drop down menu on the left to browse through my details and past projects</h5>", unsafe_allow_html=True)
+st.write('------------')
+st.markdown("<h3 style='text-align: center; color: #2A79CC;'>Am I a fit for YOUR brand?</h3>", unsafe_allow_html=True)
 
-st.markdown("<h6 style='text-align: center; color: #82CAF8;'>&#x1F4E7 sjoerdreyer@gmail.com &#x1F4E7</h6>", unsafe_allow_html=True)
-st.markdown("<h6 style='text-align: center; color: #82CAF8;'>&#x1F4F2 +31653406466 &#x1F4F2</h6>", unsafe_allow_html=True)
+
+st.markdown("<h6 style='text-align: center; color: #2A79CC;'>Contact me at:</h6>", unsafe_allow_html=True)
+
+st.markdown("<h6 style='text-align: center; color: #2A79CC;'>&#x1F4E7 sjoerdreyer@gmail.com &#x1F4E7</h6>", unsafe_allow_html=True)
+st.markdown("<h6 style='text-align: center; color: #2A79CC;'>&#x1F4F2 +31653406466 &#x1F4F2</h6>", unsafe_allow_html=True)

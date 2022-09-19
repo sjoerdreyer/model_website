@@ -1,6 +1,8 @@
 
 streamlit
 Image
+datetime
+pandas
 
 # # packaging
 # pip>=9
@@ -10,7 +12,7 @@ Image
 
 # # data science
 # numpy
-# pandas
+
 # scikit-learn
 
 # # tests/linter
