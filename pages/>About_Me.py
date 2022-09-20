@@ -3,6 +3,9 @@ import streamlit as st
 from PIL import Image
 import pandas as pd
 
+from lottie import load_lottieurl
+from streamlit_lottie import st_lottie
+
 
 birthdate = datetime(1995,10,14)
 today = datetime.today()
@@ -26,7 +29,13 @@ sjoerd_model_dict = {
 
 st.write('------------')
 
-col1, col2 = st.columns([5,4])
+col1, col2 = st.columns([4,8])
+hello_lottie = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_3vbOcw.json")
+
+with col1:
+    st_lottie(hello_lottie)
+
+
 for key, value in sjoerd_model_dict.items():
     col1.markdown(f"<h6 style='text-align: center; color: #2A79CC;'>{key} : {value}</h6>", unsafe_allow_html=True)
 

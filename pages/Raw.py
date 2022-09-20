@@ -1,10 +1,18 @@
 import streamlit as st
 from PIL import Image
 
+from lottie import load_lottieurl
+from streamlit_lottie import st_lottie
+
 
 col1, col2, col3 = st.columns([3,4,1])
-
 col2.markdown("<a style='text-align: center; href=url'>https://unsplash.com/es/s/fotos/portraits</a>", unsafe_allow_html=True)
+
+
+col12,col13,col14 = st.columns([2,2,2])
+with col13:
+    model2_lottie = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_i5oxxbam.json")
+    st_lottie(model2_lottie)
 
 
 front = Image.open('raw_data/front.jpeg')

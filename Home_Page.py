@@ -1,6 +1,11 @@
 import streamlit as st
 from PIL import Image
 
+from lottie import load_lottieurl
+from streamlit_lottie import st_lottie
+
+
+
 # HTML color codes : https://htmlcolorcodes.com/color-picker/
 # HTML emojis : https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm
 
@@ -13,16 +18,30 @@ st.set_page_config(page_title="Sjoerd de Wit",
 
 st.sidebar.success("Select from the menu above.")
 
-st.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi! Im Sjoerd &#x1F44B</h2>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: #2A79CC;'>From the Netherlands &#x1F1F3&#x1F1F1 born and raised in Peru &#x1F1F5&#x1F1EA</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi i'm Sjoerd &#x1F44B</h2>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #2A79CC;'>From the Netherlands &#x1F1F3&#x1F1F1 Born and raised in Peru &#x1F1F5&#x1F1EA</h2>", unsafe_allow_html=True)
 
 wallaroo_beach = Image.open('raw_data/wallaroo3.jpeg')
 st.image(wallaroo_beach)
+
+
+# with col5:
+#     model_lottie = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_efenfp40.json")
+#     st_lottie(model_lottie)
+
+
+
 st.write('------------')
 
 st.markdown("<h5 style='text-align: center; color: #2A79CC;'>I like to use my image to create value for brands</h5>", unsafe_allow_html=True)
 st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Use the drop down menu on the left to browse through my details and past projects</h5>", unsafe_allow_html=True)
 st.write('------------')
+
+col1,col2,col3 = st.columns(3)
+with col2:
+    photo_lottie = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_0zv8teye.json")
+    st_lottie(photo_lottie)
+
 st.markdown("<h3 style='text-align: center; color: #2A79CC;'>Am I a fit for YOUR brand?</h3>", unsafe_allow_html=True)
 
 
