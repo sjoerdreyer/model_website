@@ -1,9 +1,13 @@
 import streamlit as st
 from PIL import Image
 
-col11, col12, col13 = st.columns([3,4,1])
+from lottie import load_lottiefile
+from streamlit_lottie import st_lottie
 
-col12.markdown("<a style='text-align: center; href=url'>https://wallaroohats.com/</a>", unsafe_allow_html=True)
+col27,col28,col29 = st.columns(3)
+with col28:
+    foto_flash = load_lottiefile('lottie_json_files/foto_flash.json')
+    st_lottie(foto_flash)
 
 #Bike on beach
 wallaroo_bike = Image.open('raw_data/wallaroo5.jpeg')
@@ -46,3 +50,20 @@ col22.image(wallaroo_swing)
 col14, col15, col16 = st.columns([3,4,1])
 
 col15.markdown("<a style='text-align: center; href=url'>https://wallaroohats.com/</a>", unsafe_allow_html=True)
+
+st.write('------------')
+
+col4,col5,col6 = st.columns(3)
+with col5:
+    cam_photos = load_lottiefile('lottie_json_files/camera_photos.json')
+    st_lottie(cam_photos)
+
+st.markdown("<h2 style='text-align: center; color: #2A79CC;'>Am I a fit for YOUR brand?</h2>", unsafe_allow_html=True)
+
+
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Contact me at:</h5>", unsafe_allow_html=True)
+
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F4E7 sjoerdreyer@gmail.com &#x1F4E7</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F4F2 +31653406466 &#x1F4F2</h5>", unsafe_allow_html=True)
+
+st.write('------------')

@@ -1,18 +1,16 @@
 import streamlit as st
 from PIL import Image
 
-from lottie import load_lottieurl
+from lottie import load_lottiefile
 from streamlit_lottie import st_lottie
 
-
-col1, col2, col3 = st.columns([3,4,1])
-col2.markdown("<a style='text-align: center; href=url'>https://unsplash.com/es/s/fotos/portraits</a>", unsafe_allow_html=True)
 
 
 col12,col13,col14 = st.columns([2,2,2])
 with col13:
-    model2_lottie = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_i5oxxbam.json")
-    st_lottie(model2_lottie)
+    ph_pol_y = load_lottiefile('lottie_json_files/photo_polaroid_yellow.json')
+    st_lottie(ph_pol_y,
+              speed=2)
 
 
 front = Image.open('raw_data/front.jpeg')
@@ -29,6 +27,19 @@ col12, col13, col14 = st.columns([1,2,1])
 frontfull = Image.open('raw_data/frontfull.jpeg')
 col13.image(frontfull)
 
-col4, col5, col6 = st.columns([3,4,1])
+st.write('------------')
 
-col5.markdown("<a style='text-align: center; href=url'>https://unsplash.com/es/s/fotos/portraits</a>", unsafe_allow_html=True)
+col4,col5,col6 = st.columns(3)
+with col5:
+    cam_photos = load_lottiefile('lottie_json_files/camera_photos.json')
+    st_lottie(cam_photos)
+
+st.markdown("<h2 style='text-align: center; color: #2A79CC;'>Am I a fit for YOUR brand?</h2>", unsafe_allow_html=True)
+
+
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Contact me at:</h5>", unsafe_allow_html=True)
+
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F4E7 sjoerdreyer@gmail.com &#x1F4E7</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F4F2 +31653406466 &#x1F4F2</h5>", unsafe_allow_html=True)
+
+st.write('------------')
