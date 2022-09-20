@@ -3,6 +3,9 @@ streamlit
 Image
 datetime
 pandas
+streamlit-lottie
+streamlit_lottie
+
 
 # # packaging
 # pip>=9
