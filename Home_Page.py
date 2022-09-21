@@ -20,11 +20,11 @@ st.set_page_config(page_title="Sjoerd de Wit",
 #Sidebar menu
 st.sidebar.success("Select from the menu above.")
 
-# MainMenu visibility hidden
-st.markdown(""" <style>
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-</style> """, unsafe_allow_html=True)
+# # MainMenu visibility hidden
+# st.markdown(""" <style>
+# #MainMenu {visibility: hidden;}
+# footer {visibility: hidden;}
+# </style> """, unsafe_allow_html=True)
 
 #Padding
 padding = 0
