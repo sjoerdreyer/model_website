@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-import base64
+# import base64
 from lottie import load_lottiefile
 from streamlit_lottie import st_lottie
 
