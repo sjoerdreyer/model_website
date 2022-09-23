@@ -3,9 +3,9 @@ streamlit
 Image
 datetime
 pandas
-streamlit-lottie
-streamlit_lottie
-base64
+# streamlit-lottie
+# streamlit_lottie
+# base64
 
 
 # # packaging

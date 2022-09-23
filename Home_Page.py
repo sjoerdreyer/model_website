@@ -62,9 +62,12 @@ st.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi i'm Sjo
 #     st_lottie(welcome)
 # st.markdown("<h5 style='text-align: center; color: #2A79CC;'>To my modelling portofolio</h5>", unsafe_allow_html=True)
 
+col7,col8, col9 = st.columns([1,7,1])
 
 wallaroo_beach = Image.open('raw_data/wallaroo3.jpeg')
-st.image(wallaroo_beach)
+with col8:
+    st.image(wallaroo_beach)
+
 
 
 # with col5:
