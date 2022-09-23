@@ -38,26 +38,22 @@ st.markdown(f""" <style>
     }} </style> """, unsafe_allow_html=True)
 
 
-#Gif
-file_ = open("raw_data/giphy.gif", "rb")
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
+# #Gif
+# file_ = open("raw_data/giphy.gif", "rb")
+# contents = file_.read()
+# data_url = base64.b64encode(contents).decode("utf-8")
+# file_.close()
 
 col2,col1, col3 = st.columns([4,2,6])
 
-col1.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-    unsafe_allow_html=True,
-)
+# col1.markdown(
+#     f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+#     unsafe_allow_html=True,
+# )
 
 # st.write('------------')
 
-for _ in range(8):
-    col2.write(' ')
-col2.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi i'm Sjoerd &#x1F44B</h2>", unsafe_allow_html=True)
-col2.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F1F3&#x1F1F1 From the Netherlands &#x1F1F3&#x1F1F1</h5>", unsafe_allow_html=True)
-col2.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F1F5&#x1F1EA Born and raised in Peru &#x1F1F5&#x1F1EA</h5>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: #2A79CC;'>&#x1F44B Hi i'm Sjoerd &#x1F44B</h2>", unsafe_allow_html=True)
 
 # st.write('------------')
 # col1,col2,col3 = st.columns(3)
@@ -66,8 +62,6 @@ col2.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F1F5&#x1F1EA 
 #     st_lottie(welcome)
 # st.markdown("<h5 style='text-align: center; color: #2A79CC;'>To my modelling portofolio</h5>", unsafe_allow_html=True)
 
-
-st.write('------------')
 
 wallaroo_beach = Image.open('raw_data/wallaroo3.jpeg')
 st.image(wallaroo_beach)
@@ -81,8 +75,9 @@ st.image(wallaroo_beach)
 
 st.write(' ')
 
-st.markdown("<h5 style='text-align: center; color: #2A79CC;'>I employ my image to create value for brands</h5>", unsafe_allow_html=True)
-st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Use the drop down menu on the left to browse through my details and past projects</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F1F3&#x1F1F1 From the Netherlands &#x1F1F3&#x1F1F1</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>&#x1F1F5&#x1F1EA Born and raised in Peru &#x1F1F5&#x1F1EA</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: #2A79CC;'>Use the drop down menu ('>') on the top-left to browse through my details and past modelling projects</h5>", unsafe_allow_html=True)
 
 st.write('------------')
 
