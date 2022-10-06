@@ -6,26 +6,38 @@ from streamlit_lottie import st_lottie
 
 
 
-col12,col13,col14 = st.columns([2,2,2])
-with col13:
+col15,col16,col17 = st.columns([2,2,2])
+with col16:
     ph_pol_y = load_lottiefile('lottie_json_files/photo_polaroid_yellow.json')
     st_lottie(ph_pol_y,
               speed=2)
 
 
 front = Image.open('raw_data/front.jpeg')
+frontloose = Image.open('raw_data/frontloose.jpeg')
 left = Image.open('raw_data/left.jpeg')
 right = Image.open('raw_data/right.jpeg')
 
-col7, col8, col9, col10, col11 = st.columns([1,5,5,5,1])
+lewagon_one = Image.open('raw_data/leWagon.jpg')
+lewagon_two = Image.open('raw_data/leWagon2.jpg')
+
+frontfull = Image.open('raw_data/frontfull.jpeg')
+
+
+col7, col8, col9, col10, col11, col18 = st.columns([1,5,5,5,5,1])
 
 col8.image(left)
 col9.image(front)
-col10.image(right)
+col10.image(frontloose)
+col11.image(right)
 
-col12, col13, col14 = st.columns([1,2,1])
-frontfull = Image.open('raw_data/frontfull.jpeg')
-col13.image(frontfull)
+col19, col20, col21, col22 = st.columns([1,4.4,5,1])
+
+col20.image(frontfull)
+col21.image(lewagon_one)
+
+# col12, col13, col14 = st.columns([1,2,1])
+# col13.image(lewagon_two)
 
 st.write('------------')
 
