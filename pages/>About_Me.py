@@ -19,8 +19,8 @@ sjoerd_model_dict = {
     'Gender' : 'Man',
     'Height (cm)' : 191,
     'Chest (cm)' : 99,
-    'Hips (cm)' : 83,
-    'Waist (cm)' : 97,
+    'Waist (cm)' : 83,
+    'Hips (cm)' : 97,
     'Shoe Size (EU)' : '46/47',
     'Age' : years_old,
     'Currently in' : 'Lisboa, PT'
